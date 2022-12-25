@@ -98,7 +98,7 @@ body {
     "current current"
     "hourly hourly"
     "fiveday fiveday"
-    "feelslike humidity";
+    /* "feelslike humidity"; */;
   gap: var(--spacing-regular);
 }
 
@@ -200,7 +200,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "search search search search"
-      "feelslike current current humidity"
+      "current current current current"
       "hourly hourly hourly hourly";
     /* "feelslike feelslike humidity humidity"; */
   }

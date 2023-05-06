@@ -74,6 +74,7 @@ p {
 
 body {
   margin: 0;
+
   font-family: var(--ff-accent);
   font-weight: var(--fw-regular);
   font-size: 0.875rem;
@@ -91,6 +92,7 @@ body {
 
 .container {
   /* text-align: center; */
+  margin-top: 40rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
@@ -98,7 +100,7 @@ body {
     "current current"
     "hourly hourly"
     "fiveday fiveday"
-    /* "feelslike humidity"; */;
+    "feelslike humidity";
   gap: var(--spacing-regular);
 }
 
@@ -195,13 +197,14 @@ body {
   grid-area: humidity;
   text-align: center;
 }
-@media (width>=750px) {
+@media (width>=650px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "search search search search"
       "current current current current"
-      "hourly hourly hourly hourly";
-    /* "feelslike feelslike humidity humidity"; */
+      "hourly hourly fiveday fiveday"
+      "feelslike humidity fiveday fiveday";
+    margin-top: 0;
   }
 }
